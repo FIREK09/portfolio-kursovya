@@ -50,6 +50,8 @@
     width: 320px;
     height: 330px;
     border-radius: 13px;
+    // user-select: none;
+    pointer-events: none;
   }
   .cardtitle {
     text-align: center;
@@ -83,6 +85,7 @@
 body {
   margin: 0 auto;
   padding: 0;
+  font-family: sans-serif, adobe-notdef;
 }
 
 .head {
@@ -99,7 +102,7 @@ body {
     align-items: center;
   }
   ul {
-    margin-left: 400px;
+    margin-left: 300px;
   }
   li {
     padding: 0px 30px;
@@ -156,6 +159,23 @@ body {
 .foot {
   height: 100px;
   flex-shrink: 0;
+  display: flex;
+  text-align: right;
+  justify-content: end;
+  footer {
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 30px;
+    span {
+      text-align: end;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
 } 
 
 a {
