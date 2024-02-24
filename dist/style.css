@@ -1,24 +1,74 @@
 .card {
-  background-color: blanchedalmond;
-  width: 100px;
-  height: 150px;
+  background-color: greenyellow;
+  width: 350px;
+  height: 450px;
   display: flex;
+  border: 1px black solid;
+  border-radius: 20px;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
+  flex-wrap: wrap;
+  margin: 50px;
+  padding: 15px;
+}
+.card #img1 {
+  background-image: url(../shoes/backpack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card #img2 {
+  background-image: url(../shoes/noski.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card #img3 {
+  background-image: url(../shoes/shoozz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card #img4 {
+  background-image: url(../shoes/foot.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card #img5 {
+  background-image: url(../shoes/dimdop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card #img6 {
+  background-image: url(../shoes/dabdab.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .card .cardimg {
-  background-color: black;
   border: 1px solid black;
-  width: 50px;
-  height: 50px;
+  width: 320px;
+  height: 330px;
+  border-radius: 13px;
 }
 .card .cardtitle {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  height: max-content;
 }
 .card .cardtext {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  height: max-content;
+  font-size: 20px;
+  font-weight: bold;
 }
 .card .cardlink {
   text-align: right;
+  padding: 0;
+  margin: 0;
+  height: max-content;
+  font-weight: bold;
 }
 
 .conteiner {
@@ -41,11 +91,59 @@ body {
   width: 100%;
   filter: brightness(0.8);
 }
+.head nav, .head ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.head ul {
+  margin-left: 400px;
+}
+.head li {
+  padding: 0px 30px;
+  font-size: 22px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.head a {
+  color: #2fec00;
+  text-shadow: 0 0 16px greenyellow;
+}
+.head hr {
+  background-color: aqua;
+  box-shadow: 0 0 16px aqua;
+}
+.head h1 {
+  letter-spacing: 2px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  user-select: none;
+  color: #746565;
+}
 
 .maintext {
+  gap: 80px;
   flex-grow: 1;
   height: max-content;
   width: 100%;
+  background-image: url(../pidor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.maintext #cards_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.maintext #cards_2 {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
 
 .foot {
@@ -64,19 +162,56 @@ a {
 a::after {
   content: "";
   width: 100%;
-  height: 2px;
-  background-color: orange;
+  height: 1px;
+  background-color: green;
   transform: scaleX(0);
   transform-origin: right;
   position: absolute;
   transition: transform 1s;
   left: 0;
   bottom: 0;
-  box-shadow: 0px 0px 12px 0px #ffcd45;
+  box-shadow: 0px 0px 12px 0px green;
 }
 
 a:hover::after {
   transform: scaleX(1);
   width: 100%;
   transform-origin: left;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: aqua;
+}
+
+.foot {
+  background-color: aquamarine;
+}
+
+.interesting {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.interesting h2 {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  padding-left: 30px;
+}
+.interesting blockquote {
+  width: 800px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
 }
