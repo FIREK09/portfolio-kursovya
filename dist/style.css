@@ -218,6 +218,7 @@ a:hover::after {
   background-color: aliceblue;
   border: 2px solid black;
   border-radius: 20px;
+  margin: 50px;
 }
 .interesting h2 {
   color: black;
